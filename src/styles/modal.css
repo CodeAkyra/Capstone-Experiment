@@ -1,26 +1,21 @@
+.label.style {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
 .modal {
-    /*
-    display: none;*/
-    display: block;
+    display: none;
     position: fixed;
-    z-index: 10;
+    /*
     left: 0;
     top: 0;
+    */
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.cr-modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    border: none;
-    width: 400px;
-    height: 150px;
-    text-align: center;
-    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
 }
 
 .close {
@@ -37,26 +32,6 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
-
-.cr-blue-bar {
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
-    background-color: #008DDA;
-    height: 45px;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Sans-serif;
-}
-
-.cr-button-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .excess-button,
@@ -155,20 +130,19 @@
 }
 
 .client-modal {
-    margin: 0 auto 0;
-    place-self: center;
+    margin: 5% 10%;
     background-color: #fefefe;
     width: 1200px;
     /* Set a fixed width */
     height: fit-content;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 50px #00000057;
     /* Add shadow for better appearance */
 }
 
 .supplier-modal {
-    margin: 0 auto 0;
+    margin: 5% 10%;
     place-self: center;
     background-color: #fefefe;
     width: 1300px;
@@ -176,7 +150,7 @@
     height: fit-content;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 50px #00000057;
 }
 
 .client-button-container {
@@ -221,6 +195,19 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+.add-material-content {
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 20px;
+    font-family: Sans-serif;
+    margin: 0px 0px 0px 0px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
 .item-summary-content {
     margin: 15% auto;
     background-color: #fefefe;
@@ -231,7 +218,7 @@
 }
 
 .view-installation-content {
-    margin: 15% auto;
+    margin: 5% 10%;
     background-color: #fefefe;
     width: max-content;
     height: fit-content;
@@ -258,6 +245,15 @@
 }
 
 .unlabeled-material-content {
+    margin: 15% auto;
+    background-color: #fefefe;
+    width: max-content;
+    height: fit-content;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.start-release-material-content {
     margin: 15% auto;
     background-color: #fefefe;
     width: max-content;
@@ -368,7 +364,6 @@
 }
 
 
-
 /* ADD MATERIAL MODAL */
 .add-material-container {
     font-family: Sans-serif;
@@ -390,18 +385,6 @@
     background-color: #008DDA;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
-
-.add-material-content {
-    display: flex;
-    width: auto;
-    height: auto;
-    gap: 20px;
-    font-family: Sans-serif;
-    margin: 0px 0px 0px 0px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
 }
 
 .add-material-title {
@@ -482,16 +465,31 @@
 
 
 
+/* PRODUCTION MODAL */
+/* START RELEASE MATERIALS */
 
+.input.batchID{
+    margin-top: 10px;
+}
+
+.input.releasedDate{
+    font-family: Sans-serif;
+    width: max-content;
+    padding-left: 10px;
+    margin-left: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    height: 25px;
+}
 
 
 
 /*BUTTONS*/
 
-.confirm-btn {
+.qr-button {
+    margin-top: 10px;
     background-color: #4AC5EC;
     color: white;
-    font-size: 16;
     font-weight: bold;
     width: fit-content;
     height: fit-content;
@@ -500,10 +498,31 @@
     border-radius: 5px;
     cursor: pointer;
     height: 40px;
+    font-size: 16px;
 }
 
-.confirm-btn:hover{
+.button-modal {
+    margin-top: 10px;
+    background-color: #4AC5EC;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    font-size: 16px;
+}
+
+
+.button-modal:hover{
     background-color: #3798b6;
+}
+
+.fa-solid.fa-qrcode{
+
 }
 
 .confirm-btn.client,
@@ -519,7 +538,6 @@
     height: 40px;
     width: 40px;
     cursor: pointer;
-
     color: white;
 }
 

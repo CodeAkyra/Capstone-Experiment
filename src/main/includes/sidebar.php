@@ -1,4 +1,4 @@
-<div class="sidebar-content" style="flex: 0 0 max-content; background-color: #f0f0f0;;">
+<div class="sidebar-content" style="flex: 0 0 max-content; height: 100%; background-color: #f0f0f0;;">
     <div class="sidebar" style="display: flex; flex-direction: column;">
         <!-- Dashboard accessible to all -->
         <div class="modules">
@@ -77,26 +77,9 @@
                         Material</button>
                 </div>
             </div>
-
-            <div class="modules">
-                <button class="module-name" onclick="loadPHP('bill-of-materials.php')">Bill of Materials</button>
-            </div>
-            <div class="modules">
-                <button class="module-name" onclick="loadPHP('projects.php')">Projects</button>
-            </div>
-            <div class="modules">
-                <button class="module-name" onclick="loadPHP('reports.php')">Reports</button>
-            </div>
-            <div class="modules">
-                <button class="module-name" onclick="loadPHP('activity-logs.php')">Activity Logs</button>
-            </div>
             <div class="modules">
                 <button class="module-name" onclick="loadPHP('user.php')">User Management</button>
             </div>
-            <div class="modules">
-                <button class="module-name" onclick="loadPHP('company.php')">Company</button>
-            </div>
-
             <div class="modules">
                 <form action="/src/logout.php" method="POST">
                     <button class="module-name logout" type="submit">Sign Out</button>

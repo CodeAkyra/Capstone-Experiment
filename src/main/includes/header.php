@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FilAsia</title>
     <link rel="stylesheet" href="/src/styles/main.css">
-    <link rel="stylesheet" href="/src/styles/modals/modal.css">
+    <link rel="stylesheet" href="../styles/modal.css">
     <!--
     <link rel="stylesheet" href="/src/styles/modals/notification/success-modal.css">
     -->
@@ -23,5 +23,5 @@
 
         <?php include('includes/sidebar.php'); ?>
 
-        <div id="layoutSidebar_content" style="margin: 20px; flex-grow: 1; background-color: none;">
+        <div id="layoutSidebar_content" style="flex-grow: 1; background-color: none;">
             <main>
