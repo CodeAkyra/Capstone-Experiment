@@ -1,8 +1,3 @@
-<!-- WAG MUNA DELETE SA NGAYON -->
-<!-- WAG MUNA DELETE SA NGAYON -->
-<!-- WAG MUNA DELETE SA NGAYON -->
-<!-- WAG MUNA DELETE SA NGAYON -->
-
 <!DOCTYPE html>
 <html lang="en">
 

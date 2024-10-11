@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div class="modules">
-                <button class="module-name" onclick="loadPHP('user.php')">User Management</button>
+                <button class="module-name" onclick="loadPHP('user-management/user.php')">User Management</button>
             </div>
             <div class="modules">
                 <form action="/src/logout.php" method="POST">

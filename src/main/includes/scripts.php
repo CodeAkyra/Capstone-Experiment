@@ -97,7 +97,7 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <script>
-        function loadPHPContent(url) {
+    function loadPHPContent(url) {
         fetch(url)
             .then(response => response.text())
             .then(data => {
@@ -114,8 +114,8 @@
     window.addEventListener('message', function(event) {
         switch (event.data) {
 
-                // DITO ILAGAY YUNG MGA CREATE BUTTONS OR LIKE RECIEVE IDK
-                // PRODUCTION MODULE ===================
+            // DITO ILAGAY YUNG MGA CREATE BUTTONS OR LIKE RECIEVE IDK
+            // PRODUCTION MODULE ===================
             case 'production-openCreateRequest':
                 loadPHPContent('production/forms/create-request-material.php'); // PRODUCTION CREATE REQUEST MATERIAL
                 break;
@@ -297,7 +297,7 @@
 
                 // USER MODULE
             case 'user-cancelCreateUser':
-                loadPHPContent('user.php'); // CANCEL, DISCARD, RETURN PRODUCTION REQUEST RETURN
+                loadPHPContent('user-management/user.php'); // CANCEL, DISCARD, RETURN PRODUCTION REQUEST RETURN
                 break;
 
                 // DITO MGA RELATED SA PAG EDIT, SAVE
@@ -307,7 +307,7 @@
                 break;
 
             case 'user-saveCreateUser':
-                loadPHPContent('user.php'); // 
+                loadPHPContent('user-management/user.php'); // 
                 break;
 
                 // PRODUCTION MODULE
@@ -417,16 +417,14 @@
                 // PRODUCTION MODULE
                 // PRODUCTION MODULE
 
-
-
                 // USER MANAGEMENT
                 // USER MANAGEMENT
             case 'user-openCreateUser':
-                loadPHPContent('forms/user-create.php');
+                loadPHPContent('user-management/forms/user-create.php');
                 break;
 
             case 'user-openEditUser':
-                loadPHPContent('forms/user-edit.php');
+                loadPHPContent('user-management/forms/user-edit.php');
                 break;
                 // USER MANAGEMENT
                 // USER MANAGEMENT
