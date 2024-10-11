@@ -43,59 +43,11 @@
             });
         });
     });
-
-    // Function to start the clock
-    function startTime() {
-        const today = new Date();
-        let h = today.getHours();
-        let m = today.getMinutes();
-        let s = today.getSeconds();
-        m = checkTime(m); // Format minutes
-        s = checkTime(s); // Format seconds
-        document.getElementById('clock').innerHTML = h + ":" + m + ":" + s; // Update clock display
-        setTimeout(startTime, 1000); // Call this function every second
-    }
-
-    // Helper function to check time and add leading zero
-    function checkTime(i) {
-        if (i < 10) {
-            i = "0" + i; // Add leading zero
-        }
-        return i;
-    }
-
-    // Load Google Charts and draw the pie chart
-    google.charts.load('current', {
-        'packages': ['corechart']
-    });
-    google.charts.setOnLoadCallback(drawChart); // Call drawChart function once the Google Charts library is loaded
-
-    // Function to draw the pie chart
-    function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-            ['Task', 'Hours per Day'],
-            ['Work', 8],
-            ['Eat', 2],
-            ['TV', 4],
-            ['Gym', 2],
-            ['Sleep', 8]
-        ]);
-
-        // Set options for the chart
-        var options = {
-            'title': 'My Average Day',
-            'width': 550,
-            'height': 400
-        };
-
-        // Display the chart inside the <div> element with id="piechart"
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-        chart.draw(data, options);
-    }
 </script>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
+
+<!--
 <script>
         function loadPHPContent(url) {
         fetch(url)
@@ -107,15 +59,15 @@
 
     loadPHPContent('dashboard.php')
 </script>
-
+-->
 
 <!-- PARENT POST MESSAGE -->
 <script>
     window.addEventListener('message', function(event) {
         switch (event.data) {
 
-                // DITO ILAGAY YUNG MGA CREATE BUTTONS OR LIKE RECIEVE IDK
-                // PRODUCTION MODULE ===================
+            // DITO ILAGAY YUNG MGA CREATE BUTTONS OR LIKE RECIEVE IDK
+            // PRODUCTION MODULE ===================
             case 'production-openCreateRequest':
                 loadPHPContent('production/forms/create-request-material.php'); // PRODUCTION CREATE REQUEST MATERIAL
                 break;

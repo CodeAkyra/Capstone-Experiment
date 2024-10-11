@@ -1,16 +1,15 @@
-<div class="sidebar-content" style="flex: 0 0 max-content; height: 100%; background-color: #f0f0f0;;">
-    <div class="sidebar" style="display: flex; flex-direction: column;">
+<div class="sidebar-content">
+    <div class="sidebar">
         <!-- Dashboard accessible to all -->
         <div class="modules">
-            <button class="module-name" onclick="loadPHP('dashboard.php')">Dashboard</button>
+        <a href="index.php">Dashboard</a>
         </div>
-
 
         <!-- ADMIN ACCESS: Show all modules -->
         <?php if ($role === 'Admin'): ?>
 
             <div class="modules">
-                <button class="module-name" onclick="loadPHP('client.php')">Client</button>
+                <a href="client.php">Client</a>
             </div>
             <div class="modules">
                 <button class="module-name" onclick="loadPHP('supplier.php')">Supplier</button>
