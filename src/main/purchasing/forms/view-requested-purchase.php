@@ -6,7 +6,7 @@ include(BASE_PATH . 'includes/header.php');
 
 <div class="header">
     <h1 class="header-title">Purchasing > Requested Purchase > View</h1>
-    <button class="btn-cancel" id="cancelrequestBtn" onclick="parent.postMessage('cancelRequestedPurchase', '*')">Cancel</button>
+    <a href="<?= BASE_URL ?>purchasing/requested-purchase.php" class="btn-cancel">Cancel</a>
 </div>
 
 <div class="blue-bar">
@@ -29,7 +29,6 @@ include(BASE_PATH . 'includes/header.php');
             </tr>
         </tbody>
     </table>
-</div>
 </div>
 
 <?php

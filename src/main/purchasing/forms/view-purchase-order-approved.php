@@ -7,7 +7,7 @@ include(BASE_PATH . 'includes/header.php');
 <div class="header">
     <h1 class="header-title">Purchasing > Purchase Order > View Approved</h1>
     <div class="button-container">
-        <button class="btn-cancel" onclick="parent.postMessage('purchasing-cancelCreatePO','*')">Back</button>
+        <a href="<?= BASE_URL ?>purchasing/purchase-order.php" class="btn-cancel">Back</a>
     </div>
 </div>
 
@@ -82,9 +82,7 @@ include(BASE_PATH . 'includes/header.php');
         </tbody>
     </table>
 </div>
-</div>
 
-</div>
 <!-- PAGES -->
 <div class="pageBar">
     <div class="pageContainer">
@@ -97,12 +95,13 @@ include(BASE_PATH . 'includes/header.php');
             entries
         </p>
         <div class="pageBtn">
-            <p class="btnPrev">&lt;</p> <!-- "<", hindi na yung word na "Previews" -->
-            <a class="pageNum active" id="pageNum">1</a>
+            <p class="btnPrev">Previous</p>
+            <a id="pageNum">1</a>
             <a id="pageNum">2</a>
             <a id="pageNum">3</a>
             <a id="pageNum">4</a>
-            <p class="btnNext">&gt;</p> <!-- ">", hindi na yung word na "Next" -->
+            <a id="pageNum">5</a>
+            <p class="btnNext">Next</p>
         </div>
     </div>
 </div>

@@ -6,9 +6,8 @@ include(BASE_PATH . 'includes/header.php');
 
 <div class="header">
     <h1 class="header-title">Purchasing > Requested Material > Approval</h1>
-    <button class="button btn-cancel" onclick="parent.postMessage('purchasing-backApprove','*')">Back</button>
-    <button class="button green" id="approve-requestMaterial"
-        onclick="alert('Requested Material Approved!');parent.postMessage('approve-requestMaterial','*')">Approve</button>
+    <a href="<?= BASE_URL ?>purchasing/requested-material.php" class="btn-cancel">Back</a>
+    <button class="button green">Approve</button>
 </div>
 
 <div class="blue-bar">
@@ -101,12 +100,13 @@ include(BASE_PATH . 'includes/header.php');
             entries
         </p>
         <div class="pageBtn">
-            <p class="btnPrev">&lt;</p> <!-- "<", hindi na yung word na "Previews" -->
-            <a class="pageNum active" id="pageNum">1</a>
+            <p class="btnPrev">Previous</p>
+            <a id="pageNum">1</a>
             <a id="pageNum">2</a>
             <a id="pageNum">3</a>
             <a id="pageNum">4</a>
-            <p class="btnNext">&gt;</p> <!-- ">", hindi na yung word na "Next" -->
+            <a id="pageNum">5</a>
+            <p class="btnNext">Next</p>
         </div>
     </div>
 </div>

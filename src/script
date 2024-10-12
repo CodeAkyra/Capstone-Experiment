@@ -11,4 +11,13 @@ include(BASE_PATH . 'includes/footer.php');
 ?>
 
 <a href="forms/purchase-order-create-po.php" class="btn-create" id="create-requestBtn">+ Create PO</a>
-<a href="<?= BASE_URL ?>purchasing/purchase-order.php" class="btn-cancel">Cancel</a>
+<!-- CANCEL , BACK, RETURN , DISCARD -->
+<a href="<?= BASE_URL ?>purchasing/requested-material.php" class="btn-cancel">Cancel</a>
+
+
+
+<!-- EDIT BUTTON -->
+<a href="forms/requested-purchase-pending.php" class="edit-button"><i class="btnEdit fa-solid fa-pen-to-square"></i></a>
+
+<!-- VIEW BUTTON -->
+<a href="forms/view-requested-purchase.php" class="view-button"><i class="btnView fa-solid fa-eye"></i></a>

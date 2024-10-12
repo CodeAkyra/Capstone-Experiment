@@ -44,7 +44,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-processed-by">Pizarra</td>
                         <td class="td-req-by">Bautista</td>
                         <td class="td-action">
-                            <button class="edit-button" id="edit-requestMaterial" onclick="parent.postMessage('edit-requestMaterial', '*')"><i class="btnEdit fa-solid fa-pen-to-square"></i></button>
+                            <a href="forms/requested-material-approve.php" class="edit-button"><i class="btnEdit fa-solid fa-pen-to-square"></i></a>
                         </td>
                     </tr>
 
@@ -57,7 +57,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-processed-by">Pizarra</td>
                         <td class="td-req-by">Bautista</td>
                         <td class="td-action">
-                            <button class="view-button" onclick="parent.postMessage('purchasing-viewApprovedRequestedMaterial','*')"><i class="btnView fa-solid fa-eye"></i></i></button>
+                            <a href="forms/view-requested-material-approved.php" class="view-button"><i class="btnView fa-solid fa-eye"></i></a>
                         </td>
                     </tr>
                 </tbody>

@@ -6,8 +6,8 @@ include(BASE_PATH . 'includes/header.php');
 
 <div class="header">
     <h1 class="header-title">Purchasing > Requested Purchase > Pending</h1>
-    <button class="btn-cancel" id="cancelrequestBtn" onclick="parent.postMessage('cancelRequestedPurchase', '*')">Cancel</button>
-    <button class="button" id="markAsCompleteBtn" onclick="alert('Marked as Completed!');parent.postMessage('purchasing-completeRequestedPurchase','*')">Mark as Complete</button>
+    <a href="<?= BASE_URL ?>purchasing/requested-purchase.php" class="btn-cancel">Cancel</a>
+    <button class="button">Mark as Complete</button>
 </div>
 
 <div class="blue-bar">
