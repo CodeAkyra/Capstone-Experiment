@@ -5,7 +5,7 @@ include(BASE_PATH . 'includes/header.php');
 
 <div class="header">
     <h1 class="header-title">Purchasing > Purchase Order</h1>
-    <button class="btn-create" id="create-requestBtn" onclick="parent.postMessage('purchasing-openCreatePO','*')">+ Create PO</button>
+    <a href="forms/purchase-order-create-po.php" class="btn-create" id="create-requestBtn">+ Create PO</a>
 </div>
 
 <div class="module-content">
@@ -48,7 +48,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-req-by">Bautista</td>
                         <td class="td-approved-by">Bautista</td>
                         <td class="td-action">
-                            <button class="edit-button" onclick="parent.postMessage('purchasing-editPurchaseOrder','*')"><i class="btnEdit fa-solid fa-pen-to-square"></i></button>
+                            <a href="forms/edit-purchase-order.php" class="edit-button"><i class="btnEdit fa-solid fa-pen-to-square"></i></a>
                             <button class="delete-button" onclick="actionDelete()"><i
                                     class="btnDelete fa-solid fa-trash"></i></button>
                         </td>

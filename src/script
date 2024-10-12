@@ -1,0 +1,14 @@
+<?php
+include('../../config.php');
+
+include(BASE_PATH . 'includes/header.php');
+?>
+
+
+
+<?php
+include(BASE_PATH . 'includes/footer.php');
+?>
+
+<a href="forms/purchase-order-create-po.php" class="btn-create" id="create-requestBtn">+ Create PO</a>
+<a href="<?= BASE_URL ?>purchasing/purchase-order.php" class="btn-cancel">Cancel</a>

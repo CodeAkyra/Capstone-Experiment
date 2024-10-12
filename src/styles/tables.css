@@ -1,6 +1,7 @@
 /* MAIN DESIGN */
 .table-bg {
-    padding: 0px 0px 20px 0px; /* TOP LEFT BOTTOM RIGHT*/
+    padding: 0px 0px 20px 0px;
+    /* TOP LEFT BOTTOM RIGHT*/
     border-radius: 20px;
 }
 
@@ -20,6 +21,7 @@
 .th-style th {
     padding: 10px;
 }
+
 .th-style {
     border: 2px solid #F3F4F8;
     text-align: center;
@@ -42,28 +44,26 @@
     font-weight: bold;
 }
 
-.stock-level.normal{
+.stock-level.normal {
     background-color: #12d747;
     padding: 5px;
     border-radius: 5px;
 }
 
-.stock-level.outofstock{
+.stock-level.outofstock {
     background-color: #E6280F;
     padding: 5px;
     border-radius: 5px;
 }
 
-.stock-level.low{
+.stock-level.low {
     background-color: #E6C20F;
     padding: 5px;
     border-radius: 5px;
 }
 
 /* STATUS */
-.th-status {
-    
-}
+.th-status {}
 
 .status {
     font-weight: bold;
@@ -169,7 +169,7 @@
     cursor: pointer;
 }
 
-.td-action a{
+.td-action a {
     background-color: #1C96CA;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.164);
     border: 0px none;
@@ -204,7 +204,39 @@
 }
 
 
-.btnEdita{
+.edit-button {
+    display: inline-flex;
+    /* Ensures the icon stays centered */
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    /* Adjust size of the circle */
+    height: 40px;
+    /* Adjust size of the circle */
+    background-color: #008DDA;
+    /* Circle color */
+    border-radius: 50%;
+    /* Makes the background circular */
+    text-decoration: none;
+    /* Remove underline from the link */
+    transition: background 0.3s ease;
+    /* Add a smooth hover transition */
+}
+
+.edit-button:hover {
+    background-color: #0056a0;
+    /* Change background on hover */
+}
+
+.btnEdit {
+    color: white;
+    /* Icon color */
+    font-size: 18px;
+    /* Adjust icon size */
+}
+
+
+.btnEdita {
     cursor: pointer;
     color: white;
     font-size: 16px;

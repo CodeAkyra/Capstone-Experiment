@@ -26,15 +26,11 @@ define('BASE_URL', '/src/main/');
                     <span class="arrow">&#9660;</span>
                 </button>
                 <div class="dropdown">
-                    <button class="dropdown-link" onclick="loadPHP('inventory/inventory-master-data.php')">Inventory Master
-                        Data</button>
-                    <button class="dropdown-link" onclick="loadPHP('inventory/deliveries.php')">Deliveries</button>
-                    <button class="dropdown-link" onclick="loadPHP('inventory/release-materials.php')">Release
-                        Materials</button>
-                    <button class="dropdown-link" onclick="loadPHP('inventory/excess-materials.php')">Excess
-                        Materials</button>
-                    <button class="dropdown-link" onclick="loadPHP('inventory/request-purchase.php')">Request
-                        Purchase</button>
+                    <a href="<?= BASE_URL ?>inventory/inventory-master-data.php" class="<?= basename($_SERVER['PHP_SELF']) == 'inventory-master-data.php' ? 'active' : '' ?>">Inventory Master Data</a>
+                    <a href="<?= BASE_URL ?>inventory/deliveries.php" class="<?= basename($_SERVER['PHP_SELF']) == 'deliveries.php' ? 'active' : '' ?>">Deliveries</a>
+                    <a href="<?= BASE_URL ?>inventory/release-materials.php" class="<?= basename($_SERVER['PHP_SELF']) == 'release-materials' ? 'active' : '' ?>">Release Materials</a>
+                    <a href="<?= BASE_URL ?>inventory/excess-materials.php" class="<?= basename($_SERVER['PHP_SELF']) == 'excess-materials.php' ? 'active' : '' ?>">Excess Materials</a>
+                    <a href="<?= BASE_URL ?>inventory/request-purchase.php" class="<?= basename($_SERVER['PHP_SELF']) == 'request-purchase.php' ? 'active' : '' ?>">Request Purchase</a>
                 </div>
             </div>
 
@@ -45,10 +41,9 @@ define('BASE_URL', '/src/main/');
                     <span class="arrow">&#9660;</span>
                 </button>
                 <div class="dropdown">
-                    <button class="dropdown-link" onclick="loadPHP('production/request-material.php')">Request
-                        Material</button>
-                    <button class="dropdown-link" onclick="loadPHP('production/request-return.php')">Request
-                        Return</button>
+
+                    <a href="<?= BASE_URL ?>production/request-material.php" class="<?= basename($_SERVER['PHP_SELF']) == 'request-material.php' ? '' : '' ?>">Request Material</a>
+                    <a href="<?= BASE_URL ?>production/request-return.php" class="<?= basename($_SERVER['PHP_SELF']) == 'request-return.php' ? '' : '' ?>">Request Return</a>
                 </div>
             </div>
 
@@ -100,10 +95,8 @@ define('BASE_URL', '/src/main/');
                     <span class="arrow">&#9660;</span>
                 </button>
                 <div class="dropdown">
-                    <button class="dropdown-link" onclick="loadPHP('production/request-material.php')">Request
-                        Material</button>
-                    <button class="dropdown-link" onclick="loadPHP('production/request-return.php')">Request
-                        Return</button>
+                    <a href="<?= BASE_URL ?>production/request-material.php" class="<?= basename($_SERVER['PHP_SELF']) == 'request-material.php' ? '' : '' ?>">Request Material</a>
+                    <a href="<?= BASE_URL ?>production/request-return.php" class="<?= basename($_SERVER['PHP_SELF']) == 'request-return.php' ? '' : '' ?>">Request Return</a>
                 </div>
             </div>
 
@@ -143,12 +136,9 @@ define('BASE_URL', '/src/main/');
                     <span class="arrow">&#9660;</span>
                 </button>
                 <div class="dropdown">
-                    <button class="dropdown-link" onclick="loadPHP('../main/purchasing/purchase-order.php')">Purchase
-                        Order</button>
-                    <button class="dropdown-link" onclick="loadPHP('../main/purchasing/requested-material.php')">Requested
-                        Material</button>
-                    <button class="dropdown-link" onclick="loadPHP('../main/purchasing/requested-purchase.php')">Requested
-                        Purchase</button>
+                    <a href="<?= BASE_URL ?>purchasing/purchase-order.php" class="<?= basename($_SERVER['PHP_SELF']) == 'purchase-order.php' ? '' : '' ?>">Purchase Order</a>
+                    <a href="<?= BASE_URL ?>purchasing/requested-material.php" class="<?= basename($_SERVER['PHP_SELF']) == 'requested-material.php' ? '' : '' ?>">Requested Material</a>
+                    <a href="<?= BASE_URL ?>purchasing/requested-purchase.php" class="<?= basename($_SERVER['PHP_SELF']) == 'requested-purchase.php' ? '' : '' ?>">Requested Purchase</a>
                 </div>
             </div>
 
@@ -168,15 +158,11 @@ define('BASE_URL', '/src/main/');
                     <span class="arrow">&#9660;</span>
                 </button>
                 <div class="dropdown">
-                    <button class="dropdown-link" onclick="loadPHP('inventory/inventory-master-data.php')">Inventory Master
-                        Data</button>
-                    <button class="dropdown-link" onclick="loadPHP('inventory/deliveries.php')">Deliveries</button>
-                    <button class="dropdown-link" onclick="loadPHP('inventory/release-materials.php')">Release
-                        Materials</button>
-                    <button class="dropdown-link" onclick="loadPHP('inventory/excess-materials.php')">Excess
-                        Materials</button>
-                    <button class="dropdown-link" onclick="loadPHP('inventory/request-purchase.php')">Request
-                        Purchase</button>
+                    <a href="<?= BASE_URL ?>inventory/inventory-master-data.php" class="<?= basename($_SERVER['PHP_SELF']) == 'inventory-master-data.php' ? 'active' : '' ?>">Inventory Master Data</a>
+                    <a href="<?= BASE_URL ?>inventory/deliveries.php" class="<?= basename($_SERVER['PHP_SELF']) == 'deliveries.php' ? 'active' : '' ?>">Deliveries</a>
+                    <a href="<?= BASE_URL ?>inventory/release-materials.php" class="<?= basename($_SERVER['PHP_SELF']) == 'release-materials' ? 'active' : '' ?>">Release Materials</a>
+                    <a href="<?= BASE_URL ?>inventory/excess-materials.php" class="<?= basename($_SERVER['PHP_SELF']) == 'excess-materials.php' ? 'active' : '' ?>">Excess Materials</a>
+                    <a href="<?= BASE_URL ?>inventory/request-purchase.php" class="<?= basename($_SERVER['PHP_SELF']) == 'request-purchase.php' ? 'active' : '' ?>">Request Purchase</a>
                 </div>
             </div>
 
