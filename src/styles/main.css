@@ -168,7 +168,7 @@ body {
 *                       SIDE BAR = START
 *
 ***************************************************************
-*/
+
 
 .sidebar-content {
     height: 100%;
@@ -329,13 +329,150 @@ body {
     background-color: rgb(109, 0, 0);
 }
 
-/***************************************************************
+
 *
 *                       SIDE BAR = END
 *
 ***************************************************************
 */
 
+/* CURRENT SIDE BAR STYLES */
+
+/* Sidebar Container */
+.sidebar-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 max-content;
+    overflow-y: auto;
+}
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: #008DDA;
+    padding: 0px;
+    height: calc(100vh - 50px);
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Modules Styling */
+.modules {
+    background: #008DDA;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+/* Links inside Modules */
+.modules a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+.modules a:hover {
+    background: #0056a0;
+}
+
+/* Module Name Styling */
+.module-name,
+.module-grp {
+    background: #008DDA;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+.module-name.logout {
+    background-color: rgba(167, 0, 0, 0.63);
+    font-weight: bolder;
+}
+
+.module-name.logout:hover {
+    background-color: rgba(129, 0, 0, 0.644);
+    font-weight: bolder;
+}
+
+/* Arrow Rotation */
+.arrow {
+    margin-left: 20px;
+    font-size: 14px;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.module-name.active .arrow {
+    transform: rotate(180deg); /* Rotate arrow when active */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    text-align: center;
+    display: none;
+    background: #2D9CD9;
+}
+
+.dropdown-link {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    width: 100%;
+    border: none;
+    padding: 20px;
+    background: #2D9CD9;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-link:hover {
+    background: #71C7F5;
+}
+
+.dropdown-link.active {
+    background: #71C7F5;
+}
+
+/* Dropdown Visibility on Active */
+.module-name.active + .dropdown {
+    display: block; /* Show dropdown when the module is active */
+}
+
+/* Active and Hover States for Modules and Groups */
+.module-name:hover,
+.module-grp:hover {
+    background: #0056a0;
+}
+
+.module-name.active,
+.module-grp.active {
+    background: #0056a0;
+}
+
+/* Debugging Classes (If Needed) */
+.modules .debug {
+    background-color: rgb(109, 0, 0);
+}
+
+/* CURRENT SIDE BAR STYLES */
 
 
 

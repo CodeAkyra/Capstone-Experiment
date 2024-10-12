@@ -59,12 +59,9 @@ define('BASE_URL', '/src/main/');
                     <span class="arrow">&#9660;</span>
                 </button>
                 <div class="dropdown">
-                    <button class="dropdown-link" onclick="loadPHP('../main/purchasing/purchase-order.php')">Purchase
-                        Order</button>
-                    <button class="dropdown-link" onclick="loadPHP('../main/purchasing/requested-material.php')">Requested
-                        Material</button>
-                    <button class="dropdown-link" onclick="loadPHP('../main/purchasing/requested-purchase.php')">Requested
-                        Purchase</button>
+                    <a href="<?= BASE_URL ?>purchasing/purchase-order.php" class="<?= basename($_SERVER['PHP_SELF']) == 'purchase-order.php' ? '' : '' ?>">Purchase Order</a>
+                    <a href="<?= BASE_URL ?>purchasing/requested-material.php" class="<?= basename($_SERVER['PHP_SELF']) == 'requested-material.php' ? '' : '' ?>">Requested Material</a>
+                    <a href="<?= BASE_URL ?>purchasing/requested-purchase.php" class="<?= basename($_SERVER['PHP_SELF']) == 'requested-purchase.php' ? '' : '' ?>">Requested Purchase</a>
                 </div>
             </div>
 
@@ -76,7 +73,6 @@ define('BASE_URL', '/src/main/');
                 </button>
                 <div class="dropdown">
                     <a href="<?= BASE_URL ?>installation/installation-request-material.php" class="<?= basename($_SERVER['PHP_SELF']) == 'installation-request-material.php' ? '' : '' ?>">Request Material</a>
-
                 </div>
             </div>
 
@@ -90,6 +86,10 @@ define('BASE_URL', '/src/main/');
                 </form>
             </div>
         <?php endif; ?>
+
+
+
+
 
         <!-- ENGINEER ACCESS: Show only production module -->
         <?php if ($role === 'Engineer'): ?>
@@ -123,9 +123,7 @@ define('BASE_URL', '/src/main/');
                     <span class="arrow">&#9660;</span>
                 </button>
                 <div class="dropdown">
-                    <button class="dropdown-link"
-                        onclick="loadPHP('../main/Installation/installation-request-material.php')">Request
-                        Material</button>
+                    <a href="<?= BASE_URL ?>installation/installation-request-material.php" class="<?= basename($_SERVER['PHP_SELF']) == 'installation-request-material.php' ? '' : '' ?>">Request Material</a>
                 </div>
             </div>
 
