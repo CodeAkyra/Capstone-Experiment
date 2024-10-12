@@ -16,7 +16,7 @@ define('BASE_URL', '/src/main/');
                 <a href="<?= BASE_URL ?>client.php" class="<?= basename($_SERVER['PHP_SELF']) == 'client.php' ? 'active' : '' ?>">Clients</a>
             </div>
             <div class="modules">
-            <a href="<?= BASE_URL ?>supplier.php" class="<?= basename($_SERVER['PHP_SELF']) == 'supplier.php' ? 'active' : '' ?>">Supplier</a>
+                <a href="<?= BASE_URL ?>supplier.php" class="<?= basename($_SERVER['PHP_SELF']) == 'supplier.php' ? 'active' : '' ?>">Supplier</a>
             </div>
 
             <!-- INVENTORY -->
@@ -75,14 +75,15 @@ define('BASE_URL', '/src/main/');
                     <span class="arrow">&#9660;</span>
                 </button>
                 <div class="dropdown">
-                    <button class="dropdown-link"
-                        onclick="loadPHP('../main/Installation/installation-request-material.php')">Request
-                        Material</button>
+                    <a href="<?= BASE_URL ?>installation/installation-request-material.php" class="<?= basename($_SERVER['PHP_SELF']) == 'installation-request-material.php' ? '' : '' ?>">Request Material</a>
+
                 </div>
             </div>
+
             <div class="modules">
                 <a href="<?= BASE_URL ?>user-management/user.php" class="<?= basename($_SERVER['PHP_SELF']) == 'user.php' ? 'active' : '' ?>">User Management</a>
             </div>
+
             <div class="modules">
                 <form action="/src/logout.php" method="POST">
                     <button class="module-name logout" type="submit">Sign Out</button>
