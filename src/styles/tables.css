@@ -169,6 +169,16 @@
     cursor: pointer;
 }
 
+.td-action a{
+    background-color: #1C96CA;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.164);
+    border: 0px none;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
 .td-action .check-button {
     background-color: #5AE04E;
 }
@@ -193,6 +203,12 @@
     background-color: #1C96CA;
 }
 
+
+.btnEdita{
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
 
 .btnEdit,
 .btnDelete,

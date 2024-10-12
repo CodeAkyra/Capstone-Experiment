@@ -20,31 +20,31 @@ $userImage = '';
 switch ($role) {
     case 'Admin':
         $userName = 'Administrator';
-        $userImage = '../img/users/admin.png';
+        $userImage = '/src/img/users/admin.png';
         break;
     case 'Project-in-Charge': // Project In-charge
         $userName = 'Project In-charge';
-        $userImage = '../img/users/pic.png';
+        $userImage = '/src/img/users/pic.png';
         break;
     case 'Purchaser':
         $userName = 'Purchaser';
-        $userImage = '../img/users/purchaser.png';
+        $userImage = '/src/img/users/purchaser.png';
         break;
     case 'Warehouse Man':
         $userName = 'Warehouse Man';
-        $userImage = '../img/users/warehouse.png';
+        $userImage = '/src/img/users/warehouse.png';
         break;
     case 'Engineer':
         $userName = 'Engineer';
-        $userImage = '../img/users/engineer.png';
+        $userImage = '/src/img/users/engineer.png';
         break;
     case 'Accountant':
         $userName = 'Accountant';
-        $userImage = '../img/users/accountant.png';
+        $userImage = '/src/img/users/accountant.png';
         break;
     default:
         $userName = 'User';
-        $userImage = '../img/users/user.jpg';
+        $userImage = '/src/img/users/user.jpg';
         break;
 }
 ?>
@@ -56,7 +56,7 @@ switch ($role) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FilAsia</title>
     <link rel="stylesheet" href="/src/styles/main.css">
-    <link rel="stylesheet" href="../styles/modal.css">
+    <link rel="stylesheet" href="/src/styles/modal.css">
     <!--
     <link rel="stylesheet" href="/src/styles/modals/notification/success-modal.css">
     -->
@@ -67,12 +67,40 @@ switch ($role) {
 
 <body>
 
-    <?php include('includes/bar-top.php') ?>
+    <div class="top-bar">
+        <img class="logo" src="/src/img/filasia.png">
+        <h1 class="title">Filipinas Asia Glass and Doors Corp.</h1>
+        <div class="debug">
+            <span class="textDebug">This software is currently in development, not indicative
+                of final product</span>
+        </div>
+
+        <span id="clock"></span>
+        <!-- Display the dynamic username and role -->
+        <div class="user-info">
+            <h1 class="user-name">
+                <?php echo $userName; ?>
+            </h1> <!-- Display name based on role -->
+            <span class="user-role">
+                <?php echo ucfirst($role); ?>
+            </span> <!-- Display role -->
+        </div>
+
+        <!-- Display user icon based on role -->
+        <img class="user-icon" src="<?php echo $userImage; ?>" alt="User Icon">
+
+    </div>
 
 
     <div class="layoutSidebar" style="display: flex; width: 100%; overflow: scroll;">
 
-        <?php include('includes/sidebar.php'); ?>
+        <?php
+        if (!defined('BASE_PATH')) {
+            define('BASE_PATH', __DIR__ . '/../'); // Adjust to your project's structure
+        }
+        include(BASE_PATH . 'includes/sidebar.php');
+        ?>
+
 
         <div id="layoutSidebar_content" style="flex-grow: 1; background-color: none;">
             <main>

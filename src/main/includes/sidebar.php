@@ -1,18 +1,22 @@
+<?php
+define('BASE_URL', '/src/main/');
+?>
+
 <div class="sidebar-content">
     <div class="sidebar">
         <!-- Dashboard accessible to all -->
         <div class="modules">
-        <a href="index.php">Dashboard</a>
+            <a href="<?= BASE_URL ?>index.php" class="<?= basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : '' ?>">Dashboard</a>
         </div>
 
         <!-- ADMIN ACCESS: Show all modules -->
         <?php if ($role === 'Admin'): ?>
 
             <div class="modules">
-                <a href="client.php">Client</a>
+                <a href="<?= BASE_URL ?>client.php" class="<?= basename($_SERVER['PHP_SELF']) == 'client.php' ? 'active' : '' ?>">Clients</a>
             </div>
             <div class="modules">
-                <button class="module-name" onclick="loadPHP('supplier.php')">Supplier</button>
+            <a href="<?= BASE_URL ?>supplier.php" class="<?= basename($_SERVER['PHP_SELF']) == 'supplier.php' ? 'active' : '' ?>">Supplier</a>
             </div>
 
             <!-- INVENTORY -->
@@ -77,7 +81,7 @@
                 </div>
             </div>
             <div class="modules">
-                <button class="module-name" onclick="loadPHP('user.php')">User Management</button>
+                <a href="<?= BASE_URL ?>user-management/user.php" class="<?= basename($_SERVER['PHP_SELF']) == 'user.php' ? 'active' : '' ?>">User Management</a>
             </div>
             <div class="modules">
                 <form action="/src/logout.php" method="POST">
