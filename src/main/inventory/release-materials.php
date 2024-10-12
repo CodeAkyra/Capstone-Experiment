@@ -52,7 +52,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-remarks">Remarks</th>
                         <td class="td-action">
                             </th>
-                            <button class="view-button" onclick="parent.postMessage('inventory-startReleaseMaterials','*')"><i class="btnView fa-solid fa-eye"></i></i></button>
+                            <a href="forms/start-releasing.php" class="edit-button"><i class="btnEdit fa-solid fa-pen-to-square"></i></a>
                         </td>
                     </tr>
 
@@ -69,7 +69,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-remarks">Remarks</th>
                         <td class="td-action">
                             </th>
-                            <button class="view-button" onclick="parent.postMessage('inventory-viewReleasedMaterials','*')"><i class="btnView fa-solid fa-eye"></i></i></button>
+                            <a href="forms/view-released.php" class="view-button"><i class="btnView fa-solid fa-eye"></i></a>
                         </td>
                     </tr>
                 </tbody>

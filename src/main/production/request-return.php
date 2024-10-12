@@ -7,7 +7,7 @@ include(BASE_PATH . 'includes/header.php');
     <h1 class="header-title">Production > Request Return</h1>
 
     <!-- Dito lahat ng content for Create Excess Return -->
-    <button onclick="parent.postMessage('production-openCreateReturn', '*');" class="btn-create">+ Create Return</button>
+    <a href="forms/create-return-excess.php" class="btn-create" id="create-requestBtn">+ Create Return</a>
 </div>
 
 <div class="module-content">
@@ -55,8 +55,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-req-by">Bautista</td>
                         <td class="td-feedback">Icon</td>
                         <td class="td-action">
-                            <button class="edit-button update-exc-pending-button" onclick="parent.postMessage('updateExcPending','*')"><i
-                                    class="btnEdit fa-solid fa-pen-to-square"></i></button>
+                            <a href="forms/update-excess.php" class="edit-button"><i class="btnEdit fa-solid fa-pen-to-square"></i></a>
                             <button class="delete-button" onclick="actionDelete()"><i
                                     class="btnDelete fa-solid fa-trash"></i></button>
                         </td>
@@ -78,7 +77,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-req-by">Bautista</td>
                         <td class="td-feedback">Icon</td>
                         <td class="td-action">
-                            <button class="view-button view-inprocess-exc-button" onclick="parent.postMessage('viewInProcessExc','*')"><i class="btnView fa-solid fa-eye"></i></i></button>
+                            <a href="forms/view-inprocess-excess.php" class="view-button"><i class="btnView fa-solid fa-eye"></i></a>
                         </td>
                     </tr>
 
@@ -98,7 +97,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-req-by">Bautista</td>
                         <td class="td-feedback">Icon</td>
                         <td class="td-action">
-                            <button class="view-button view-complete-exc-button" onclick="parent.postMessage('viewCompleteExc','*')"><i class="btnView fa-solid fa-eye"></i></i></button>
+                            <a href="forms/view-completed-excess.php" class="view-button"><i class="btnView fa-solid fa-eye"></i></a>
                         </td>
                     </tr>
                 </tbody>

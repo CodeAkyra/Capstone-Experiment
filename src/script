@@ -10,14 +10,15 @@ include(BASE_PATH . 'includes/header.php');
 include(BASE_PATH . 'includes/footer.php');
 ?>
 
-<a href="forms/purchase-order-create-po.php" class="btn-create" id="create-requestBtn">+ Create PO</a>
+<a href="forms/create-return-excess.php" class="btn-create" id="create-requestBtn">+ Create PO</a>
 <!-- CANCEL , BACK, RETURN , DISCARD -->
-<a href="<?= BASE_URL ?>purchasing/requested-material.php" class="btn-cancel">Cancel</a>
+<a href="<?= BASE_URL ?>inventory/deliveries.php" class="btn-cancel">Cancel</a>
+<a href="<?= BASE_URL ?>inventory/deliveries.php" class="btn-cancel">Back</a>
 
 
 
 <!-- EDIT BUTTON -->
-<a href="forms/requested-purchase-pending.php" class="edit-button"><i class="btnEdit fa-solid fa-pen-to-square"></i></a>
+<a href="inventory/forms/start-releasing.php" class="edit-button"><i class="btnEdit fa-solid fa-pen-to-square"></i></a>
 
 <!-- VIEW BUTTON -->
-<a href="forms/view-requested-purchase.php" class="view-button"><i class="btnView fa-solid fa-eye"></i></a>
+<a href="forms/view-released.php" class="view-button"><i class="btnView fa-solid fa-eye"></i></a>

@@ -5,7 +5,7 @@ include(BASE_PATH . 'includes/header.php');
 ?>
 
 <div class="header">
-    <h1 class="header-title">Inventory > Deliveries > Start Receiving</h1>
+    <h1 class="header-title">Inventory > Deliveries > Start Receiving Incomplete</h1>
     <div class="header-buttons">
         <a href="<?= BASE_URL ?>inventory/deliveries.php" class="btn-cancel">Cancel</a>
         <button class="btn-finish-receiving">Receive Deliveries</button>

@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include('../../config.php');
+
+include(BASE_PATH . 'includes/header.php');
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -23,38 +26,37 @@
     </style>
 </head>
 
-<body class="body-iframe-padding">
-    <div class="header">
-        <h1 class="header-title">Images > Completed</h1>
-        <div class="header-buttons">
-            <button class="btn-cancel" id="cancelrequestBtn"
-                onclick="parent.postMessage('viewExcessC-cancelAction', '*')">Back</button>
-        </div>
+
+<div class="header">
+    <h1 class="header-title">Images > Completed</h1>
+    <div class="header-buttons">
+        <a href="<?= BASE_URL ?>forms/view-excess-material.php" class="btn-cancel">Back</a>
+    </div>
+</div>
+
+<div class="blue-bar">
+    <h1 class="module-title">Excess Materials:</h1>
+    <div class="imgGallery">
+        <img src="../cdn/inv/admin.png" alt="img">
+        <img src="../cdn/inv/admin.png" alt="img">
+        <img src="../cdn/inv/admin.png" alt="img">
+        <img src="../cdn/inv/admin.png" alt="img">
+        <img src="../cdn/inv/admin.png" alt="img">
+        <img src="../cdn/inv/admin.png" alt="img">
+        <img src="../cdn/inv/admin.png" alt="img">
+        <img src="../cdn/inv/admin.png" alt="img">
+        <img src="../cdn/inv/admin.png" alt="img">
+        <img src="../cdn/inv/admin.png" alt="img">
+        <img src="../cdn/inv/admin.png" alt="img">
+        <img src="../cdn/inv/admin.png" alt="img">
+        <img src="../cdn/inv/admin.png" alt="img">
     </div>
 
-    <div class="blue-bar">
-        <h1 class="module-title">Excess Materials:</h1>
-        <div class="imgGallery">
-            <img src="../cdn/inv/admin.png" alt="img">
-            <img src="../cdn/inv/admin.png" alt="img">
-            <img src="../cdn/inv/admin.png" alt="img">
-            <img src="../cdn/inv/admin.png" alt="img">
-            <img src="../cdn/inv/admin.png" alt="img">
-            <img src="../cdn/inv/admin.png" alt="img">
-            <img src="../cdn/inv/admin.png" alt="img">
-            <img src="../cdn/inv/admin.png" alt="img">
-            <img src="../cdn/inv/admin.png" alt="img">
-            <img src="../cdn/inv/admin.png" alt="img">
-            <img src="../cdn/inv/admin.png" alt="img">
-            <img src="../cdn/inv/admin.png" alt="img">
-            <img src="../cdn/inv/admin.png" alt="img">
-        </div>
 
 
 
+</div>
 
-    </div>
-
-</body>
-
-</html>
+<?php
+include(BASE_PATH . 'includes/footer.php');
+?>

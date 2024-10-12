@@ -5,7 +5,7 @@ include(BASE_PATH . 'includes/header.php');
 
 <div class="header">
     <h1 class="header-title">Production > Request Material</h1>
-    <button class="btn-create" id="create-requestBtn" onclick="parent.postMessage('production-openCreateRequest', '*')">+ Create Request</button>
+    <a href="forms/create-request-material.php" class="btn-create" id="create-requestBtn">+ Create Request</a>
 </div>
 
 <div class="module-content">
@@ -49,7 +49,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-req-by">Bautista</td>
                         <td class="td-action">
                             <!-- nalimot ko yung para dito, maya q ayusin -->
-                            <button class="edit-button" onclick="parent.postMessage('edit-requestBtn', '*')"><i class="btnEdit fa-solid fa-pen-to-square"></i></button>
+                            <a href="forms/edit-request-material.php" class="edit-button"><i class="btnEdit fa-solid fa-pen-to-square"></i></a>
                             <button class="delete-button" onclick="actionDelete()"><i
                                     class="btnDelete fa-solid fa-trash"></i></button>
                         </td>

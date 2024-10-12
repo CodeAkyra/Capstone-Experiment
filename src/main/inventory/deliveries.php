@@ -47,7 +47,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-req-by">Bautista</td>
                         <td class="td-req-by">-</td>
                         <td class="td-action">
-                            <button class="edit-button" onclick="parent.postMessage('inventory-startReceivingDeliveries','*')"><i class="btnEdit fa-solid fa-pen-to-square"></i></button>
+                            <a href="forms/start-receiving.php" class="edit-button"><i class="btnEdit fa-solid fa-pen-to-square"></i></a>
                         </td>
                     </tr>
 
@@ -61,7 +61,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-req-by">Bautista</td>
                         <td class="td-req-by">Bautista</td>
                         <td class="td-action">
-                            <button class="edit-button" onclick="parent.postMessage('inventory-startReceivingDeliveries','*')"><i class="btnEdit fa-solid fa-pen-to-square"></i></button>
+                            <a href="forms/start-receiving-incomplete.php" class="edit-button"><i class="btnEdit fa-solid fa-pen-to-square"></i></a>
                             <button class="view-button" onclick="parent.postMessage('viewDeliverySummaryIncomplete','*')"><i class="btnView fa-solid fa-eye"></i></i></button>
                         </td>
                     </tr>
