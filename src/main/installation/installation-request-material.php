@@ -6,7 +6,7 @@ include(BASE_PATH . 'includes/header.php');
 <!-- HEADER -->
 <div class="header">
     <h1 class="header-title">Installation > Request Materials</h1>
-    <button class="btn-create" id="install-create-request-btn" onclick="parent.postMessage('installation-openCreateRequest','*')">+ Create Request</button>
+    <a href="forms/install-create-request-material.php" class="btn-create">Create Request</a>
 </div>
 
 <div class="module-content">
@@ -54,8 +54,8 @@ include(BASE_PATH . 'includes/header.php');
                     <td class="td-style">Pizarra</td>
                     <td class="td-feedback">Icon</td>
                     <td class="td-action">
-                        <button class="edit-button installRequest-editAction" onclick="parent.postMessage('installRequest-editAction','*')"><i
-                                class="btnEdit fa-solid fa-pen-to-square"></i></button>
+                        <a href="forms/install-edit-request-material.php" class="edit-button"><i
+                                class="btnEdit fa-solid fa-pen-to-square"></i></a>
                         <button class="delete-button" onclick="actionDelete()"><i
                                 class="btnDelete fa-solid fa-trash"></i></button>
                     </td>
