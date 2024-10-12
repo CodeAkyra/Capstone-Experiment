@@ -29,8 +29,7 @@ include(BASE_PATH . 'includes/header.php');
 <div class="header">
     <h1 class="header-title">Images > Pending</h1>
     <div class="header-buttons">
-        <button class="btn-cancel" id="cancelrequestBtn"
-            onclick="parent.postMessage('viewExcessP-cancelAction', '*')">Back</button>
+        <a href="<?= BASE_URL ?>inventory/forms/edit-excess-material.php" class="btn-cancel">Back</a>
     </div>
 </div>
 

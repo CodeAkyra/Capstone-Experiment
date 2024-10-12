@@ -50,7 +50,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-remarks">Icon</td>
                         <td class="td-action">
                             <!-- nalimot ko yung para dito, maya q ayusin -->
-                            <button class="edit-button" onclick="parent.postMessage('inventory-editExcessBtn', '*')"><i class="btnEdit fa-solid fa-pen-to-square"></i></button>
+                            <a href="forms/edit-excess-material.php" class="edit-button"><i class="btnEdit fa-solid fa-pen-to-square"></i></a>
                     </tr>
 
                     <tr>
@@ -64,7 +64,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-req-by">Bautista</td>
                         <td class="td-remarks">Icon</td>
                         <td class="td-action">
-                            <button class="view-button" onclick="parent.postMessage('inventory-viewExcessReturnedMaterials','*')"><i class="btnView fa-solid fa-eye"></i></i></button>
+                            <a href="forms/view-excess-material.php" class="view-button"><i class="btnView fa-solid fa-eye"></i></a>
                     </tr>
                 </tbody>
             </table>

@@ -1,3 +1,16 @@
+<!-- NOTES:
+
+DAPAT PAG PINIPINDOT YUNG BUTTON, NAKA ACTIVE PARIN SIYA
+ 
+-->
+
+
+
+
+
+
+
+
 <?php
 define('BASE_URL', '/src/main/');
 ?>

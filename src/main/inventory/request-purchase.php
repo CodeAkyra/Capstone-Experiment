@@ -5,7 +5,7 @@ include(BASE_PATH . 'includes/header.php');
 <!-- HEADER -->
 <div class="header">
     <h1 class="header-title">Inventory > Request Purchase</h1>
-    <button class="btn-create" id="create-requestBtn" onclick="parent.postMessage('inventory-openCreateRequest', '*')">Create Request Purchase</button>
+    <a href="forms/create-request-purchase.php" class="btn-create">Create Request Purchase</a>
 </div>
 
 <div class="module-content">
@@ -44,7 +44,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-req-by">Bautista</td>
                         <td class="td-action">
                             <!-- nalimot ko yung para dito, maya q ayusin -->
-                            <button class="edit-button" onclick="parent.postMessage('inventory-editRequestPurchase','*')"><i class="btnEdit fa-solid fa-pen-to-square"></i></button>
+                            <a href="forms/edit-request-purchase.php" class="edit-button"><i class="btnEdit fa-solid fa-pen-to-square"></i></a>
                         </td>
                     </tr>
 
@@ -56,7 +56,7 @@ include(BASE_PATH . 'includes/header.php');
                         <td class="td-processed-by">Pizarra</td>
                         <td class="td-req-by">Bautista</td>
                         <td class="td-action">
-                            <button class="view-button" onclick="parent.postMessage('inventory-viewRequestPurchase','*')"><i class="btnView fa-solid fa-eye"></i></i></button>
+                            <a href="forms/view-request-purchase.php" class="view-button"><i class="btnView fa-solid fa-eye"></i></a>
                         </td>
                     </tr>
                 </tbody>

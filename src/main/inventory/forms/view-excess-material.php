@@ -7,8 +7,8 @@ include(BASE_PATH . 'includes/header.php');
 <div class="header">
     <h1 class="header-title">Inventory > Excess Materials > View Excess Returned Materials</h1>
     <div class="header-buttons">
-        <button class="btn-cancel" id="cancelrequestBtn" onclick="parent.postMessage('excessMaterial-cancelAction', '*')">Cancel</button>
-        <button class="view-image-button" id="" onclick="parent.postMessage('inventory-excessMaterialC-viewImage', '*')">View Image</button>
+        <a href="<?= BASE_URL ?>inventory/excess-materials.php" class="btn-cancel">Cancel</a>
+        <a href="view-excess-completed-image.php" class="view-image-button">View Image</a>
     </div>
 
 </div>

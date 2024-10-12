@@ -30,7 +30,7 @@ include(BASE_PATH . 'includes/header.php');
 <div class="header">
     <h1 class="header-title">Images > Completed</h1>
     <div class="header-buttons">
-        <a href="<?= BASE_URL ?>forms/view-excess-material.php" class="btn-cancel">Back</a>
+        <a href="<?= BASE_URL ?>inventory/forms/view-excess-material.php" class="btn-cancel">Back</a>
     </div>
 </div>
 

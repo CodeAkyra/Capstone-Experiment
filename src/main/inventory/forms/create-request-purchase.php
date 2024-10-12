@@ -6,9 +6,8 @@ include(BASE_PATH . 'includes/header.php');
 
 <div class="header">
     <h1 class="header-title">Inventory > Request Purchase > Create Request Purchase</h1>
-    <button class="btn-cancel" id="cancelrequestBtn" onclick="parent.postMessage('createRequestPurchase-cancelAction', '*')">Cancel</button>
-    <button class="btn-create" id="save-create-request"
-        onclick="alert('Purchase Requested Successfully!');parent.postMessage('inventoryCreateRequestPurchase-saveAction', '*')">Save and Request</button>
+    <a href="<?= BASE_URL ?>inventory/request-purchase.php" class="btn-cancel">Cancel</a>
+    <button class="btn-create">Save and Request</button>
 </div>
 
 <div class="blue-bar">

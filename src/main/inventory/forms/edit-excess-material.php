@@ -10,11 +10,10 @@ include(BASE_PATH . 'includes/header.php');
 
         <!-- MAKALAT PA YUNG GAP AND SPACING NG MGA BUTTONS DITO -->
 
-        <button class="btn-cancel" id="cancelrequestBtn" onclick="parent.postMessage('excessMaterial-cancelAction', '*')">Cancel</button>
-        <button class="view-image-button" id="" onclick="parent.postMessage('inventory-excessMaterialP-viewImage', '*')">View Image</button>
+        <a href="<?= BASE_URL ?>inventory/excess-materials.php" class="btn-cancel">Cancel</a>
+        <a href="view-excess-pending-image.php" class="view-image-button">View Image</a>
         <button class="btn-qr" id=""><i class="fa-solid fa-qrcode"></i></button>
-        <button class="btn-finish-receiving" id="finish-receiving"
-            onclick="alert('Excess Material Received!');parent.postMessage('inventory-excessMaterial-saveAction', '*')">Finish Receiving</button>
+        <button class="btn-finish-receiving">Finish Receiving</button>
 
 
     </div>
